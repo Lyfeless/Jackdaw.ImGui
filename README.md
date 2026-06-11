@@ -3,7 +3,7 @@ A wrapper for creating [ImGui](https://github.com/ocornut/imgui) menus as compon
 This extension is still work-in-progress and may be missing integration with some ImGui features.
 
 ### Usage
-Jackdaw ImGUI is handled through `ImGuiComponent` components using custom behavior defined with `ILayoutBuilder`.
+Jackdaw ImGUI uses instances of `ImGuiComponent` to control updating and rendering, defining custom behavior with user-made `ILayoutBuilder` instances.
 
 ```cs
 // Create the game instance with a basic configuration
