@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <Title>Jackdaw.ImGui</Title>
+    <Version>0.1.0</Version>
+    <Authors>Lyfeless</Authors>
+    <Description>An extension for using ImGui in Jackdaw.</Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Lyfeless/Jackdaw.ImGui</RepositoryUrl>
+
+    <PackageId>JackdawEngine.ImGui</PackageId>
+    <PackageProjectUrl>https://github.com/Lyfeless/Jackdaw.ImGui</PackageProjectUrl>
+    <PackageTags>Jackdaw;Foster;ImGui</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JackdawEngine" Version="0.3.*" />
+    <PackageReference Include="ImGui.NET" Version="1.91.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(ProjectDir)..\LICENSE" Pack="true" PackagePath="/" />
+    <None Include="$(ProjectDir)..\README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
