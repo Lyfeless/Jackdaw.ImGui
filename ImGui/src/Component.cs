@@ -18,10 +18,10 @@ public unsafe class ImGuiComponent(Game game, BoundsComponent bounds, params ILa
     /// </summary>
     public BoundsComponent Bounds = bounds;
 
-    Target target;
-    Texture font;
-    private static Mesh mesh;
-    private static Material material;
+    Target target = default!;
+    Texture font = default!;
+    private static Mesh mesh = default!;
+    private static Material material = default!;
     readonly List<Texture> boundTextures = [];
 
     /// <summary>
